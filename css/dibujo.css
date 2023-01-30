@@ -1,0 +1,43 @@
+:root{
+    /*
+        *  FUENTES
+    */
+    --fuentePrincipal: "Opens Sans", Sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* * NOW 1REM IS EQUAL TO 10PX */
+}
+body{
+    font: normal normal 1.6rem var(--fuentePrincipal);
+}
+a{
+    text-decoration: none;
+}
+
+
+/* 
+    * DIBUJO
+*/
+
+.art{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+.art__image{
+    width: 100%;
+    max-width: 80rem;
+}
